@@ -5,7 +5,7 @@
  */
 package ejemplolecturaescrituraficheros;
 
-import ejemplolecturaescrituraficheros.lectura.*;
+import ejemplolecturaescrituraficheros.escritura.*;
 
 /**
  *
@@ -25,8 +25,17 @@ public class EjemploLecturaEscrituraFicheros {
 //        }catch(Exception e){
 //            System.out.println("Error");
 //        }
-        LeerObjeto lo1 = new LeerObjeto();
-        lo1.leerObjetos("./src/ejemploficheroobjeto.omar");
+
+
+//        LeerObjeto lo1 = new LeerObjeto();
+//        lo1.leerObjetos("./src/ejemploficheroobjeto.omar");
+
+        
+        Escribir e1= new Escribir();
+        e1.escribirTexto("./src/ejemploficheroescribir.omar");
+        AñadirDatos ad1= new AñadirDatos();
+        ad1.añadir("./src/ejemploficheroescribir.omar","En un lugar de la Mancha");
+        ad1.añadir("./src/ejemploficheroescribir.omar","de cuyo nombre no quiero");
     }
 
 }
